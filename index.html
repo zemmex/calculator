@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>calculater</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <style>
+        body{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding-top:20%;
+            
+        }
+            #board{
+                background-color:rgba(0,0,0,0.7);
+                border-radius:15px;
+                margin:0 8px;
+                width:100%;
+                box-sizing:border-box;
+            }
+            #screendiv{
+                display:flex;
+                justify-content:center;
+                width:100%;
+            }
+            #screen{
+                width:80%;
+                height:80px;
+                background:rgba(20,130,50,0.4);
+                margin-top:40px;
+                color:black;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                box-sizing:border-box;
+                font-weight:bold;
+                font-size:33px;
+                overflow:scroll;
+
+
+            }
+            button{
+                display:inline-block;
+                background:black;
+                color:white;
+                text-transform:capitalize;
+                width:60px;
+                height:50px;
+                margin-left:10px;
+                margin-bottom:15px;
+                font-weight:bold;
+                border-right:8px inset gray;
+                border-bottom:10px inset rgba(70,90,100,0.4);
+                font-size:30px;
+            }
+            #power{
+                text-transform:none;
+            }
+            #container{
+                margin:30px 15px;
+                display:flex;
+                justify-content:space-between;
+                align-items:flex-start;
+                
+                
+            }
+            #numbers{
+                width:60%;
+                padding:0;
+            }
+            #operaters{
+                width:40%;
+            }
+            #numbers,#operaters{
+                display:flex;
+                flex-wrap:wrap;
+                align-items:center;
+                justify-content:center;
+                
+            }
+            #remove,#clear_all{
+            font-size:11px;
+            }
+            #oo,#z{
+                width:88%;
+            }
+            #power{
+                letter-spacing:4px;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+<div id="board">
+        <div id="screendiv">
+    <div id="screen">
+        13838772277273773838382
+    </div>
+        </div>
+    <div id="container">
+        <div id="numbers">
+<button id="o">1</button>
+<button id="t">2</button>
+<button id="th">3</button>
+<button id="fo">4</button>
+<button id="f">5</button>
+<button id="s">6</button>
+<button id="se">7</button>
+<button id="e">8</button>
+<button id="n">9</button>
+<button id="z">0</button>
+<button id="oo">00</button>
+        </div>
+        <div id="operaters">
+<button id="plus">+</button>
+<button id="minus">-</button>
+<button id="multiply">x</button>
+<button id="devide">/</button>
+<button id="square_root">√</button>
+<button id="power">a<sup>b</sup></button>
+<button id="reminder">%</button>
+<button id="clear_all">clear all</button>
+<button id="remove">remove</button>
+<button id="result">=</button>
+        </div>
+    </div>
+    
+    
+</div>
+    </body>
+</html>
